@@ -139,11 +139,3 @@ struct TodoListView: View {
 		dateFormatter.string(from: Date())
 	}
 }
-
-struct TodoListView_Previews: PreviewProvider {
-	static var previews: some View {
-		TodoListView()
-			.environment(\.managedObjectContext,
-						  PersistenceController.preview.container.viewContext)
-	}
-}

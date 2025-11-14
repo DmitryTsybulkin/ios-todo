@@ -78,8 +78,6 @@ struct TodoEditView: View {
 	}
 }
 
-struct TodoEditView_Previews: PreviewProvider {
-	static var previews: some View {
-		TodoEditView(passedTodo: nil)
-	}
+#Preview {
+	TodoEditView(passedTodo: nil)
 }
